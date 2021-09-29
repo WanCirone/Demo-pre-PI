@@ -24,25 +24,31 @@ const { conn, City } = require('./src/db.js');
 conn.sync({ force: true }).then(() => {
   server.listen(3001, () => {
     console.log('%s listening at 3001'); 
-    var londres =  City.create({
-      name: "Londres",
+    var caracas =  City.create({
+      name: "Caracas",
       min: 20,
       max: 30
     });
     
-    var roma =  City.create({
-      name: "Deportes",
+    var cali =  City.create({
+      name: "Cali",
       min: 1,
       max: 50
     });
     
-    var paris =  City.create({
-      name: "Videojuegos",
+    var bsas =  City.create({
+      name: "Buenos Aires",
       min: 100,
       max: 200
     });
+
+    var quito =  City.create({
+      name: "Quito",
+      min: 10,
+      max: 20
+    });
     
-    Promise.all([londres, roma, paris])
+    Promise.all([caracas, cali, bsas, quito])
       .then(res => {
         console.log("Ciudades precargadas");
       });
