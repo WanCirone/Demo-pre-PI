@@ -1,17 +1,48 @@
-.card {
-  margin: 20px;
-  width: 18rem;
+.styleOne {
+  margin: 25px;
+  width: 200px;
+  height: 250px;
+  background-color: rgb(254,210,38);
+  border: solid rgb(254,210,38) 1px;
+}
+
+.styleTwo {
+  margin: 25px;
+  width: 200px;
+  height: 250px;
+  background-color: rgb(5,182,232);
+  border: solid rgb(5,182,232) 1px;
+}
+
+.styleThree {
+  margin: 25px;
+  width: 200px;
+  height: 250px;
+  background-color: rgb(232,33,121);
+  border: solid rgb(232,33,121) 1px;
+}
+
+.styleFour {
+  margin: 25px;
+  width: 200px;
+  height: 250px;
+  background-color: rgb(131,194,63);
+  border: solid rgb(131,194,63) 1px;
 }
 
 .card-title {
   margin-bottom: 15px;
+  color: white;
+  font-size: 25px;
 }
 
-#closeIcon {
-  display: flex;
-  justify-content: flex-end;
-  margin-right: 8px;
-  margin-top: 8px;
+p {
+  color: white;
+  font-size: 20px;
+}
+
+.temp {
+  margin: 10px;
 }
 
 .card-body {

@@ -1,20 +1,17 @@
 import React from 'react';
 import './Card.css';
 
-export default function Card ({min, max, name}) {
+export default function Card ({min, max, name, style}) {
     return (
-      <div className="card">
-        <div id="closeIcon" className="row">
-            <button className="btn btn-sm btn-danger">X</button>
-        </div>
+      <div className={style} >
         <div className="card-body">
             <h5 className="card-title">{name}</h5>
           <div className="row">
-            <div className="col-sm-4 col-md-4 col-lg-4">
+            <div className="temp">
               <p>Min</p>
               <p>{min}°</p>
             </div>
-            <div className="col-sm-4 col-md-4 col-lg-4">
+            <div className="temp">
               <p>Max</p>
               <p>{max}°</p>
             </div>

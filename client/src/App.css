@@ -1,8 +1,15 @@
+html, body {
+  background-color: rgb(156,84,160);
+  height: 100%;
+}
+
 .App {
   text-align: center;
+  margin-top: 5%;
 }
 
 .row {
   display: flex;
   justify-content: center;
 }
+
